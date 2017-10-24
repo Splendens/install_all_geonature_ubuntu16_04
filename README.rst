@@ -8,15 +8,15 @@ Exemple repris à partir de l'`installation globale <http://geonature.readthedoc
 Geonature
 ------------
 
-**Installation du serveur **
+**Installation du serveur**
 
 
 
-**Installation de la base de données **
+**Installation de la base de données**
 
 
 
-**Installation de l'application **
+**Installation de l'application**
 
 
 
@@ -24,16 +24,16 @@ Geonature
 UserHub
 ------------
 
-**Installation du serveur **
+**Installation du serveur**
 
 
 
-**Installation de la base de données **
+**Installation de la base de données**
 
 
 
 
-**Installation de l'application **
+**Installation de l'application**
 
 
 
@@ -43,16 +43,16 @@ TaxHub
 ------------
 
 
-**Installation du serveur **
+**Installation du serveur**
 
 
 
-**Installation de la base de données **
+**Installation de la base de données**
 
 
 
 
-**Installation de l'application **
+**Installation de l'application**
 
 
 
@@ -62,16 +62,16 @@ TaxHub
 Geonature-atlas
 ------------
 
-**Installation du serveur **
+**Installation du serveur**
 
 
 
-**Installation de la base de données **
+**Installation de la base de données**
 
 
 
 
-**Installation de l'application **
+**Installation de l'application**
 
 
 
