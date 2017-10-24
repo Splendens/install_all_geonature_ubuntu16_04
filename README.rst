@@ -4,13 +4,15 @@ Installation globale de Geonature, UsersHub, TaxHub et Geonature-Atlas, pour un 
 Exemple repris à partir de l'`installation globale <http://geonature.readthedocs.io/fr/latest/install_all/README.html>`_ des applications Geonature de gestion de données naturalistes (`GeoNature <https://github.com/PnEcrins/GeoNature>`_, `UsersHub <https://github.com/PnEcrins/UsersHub>`_, `TaxHub <https://github.com/PnX-SI/TaxHub>`_ et `GeoNature-atlas <https://github.com/PnEcrins/GeoNature-atlas>`_).
 
 
+Installation du serveur
+------------
+
+#todo
+
+
 
 Geonature
 ------------
-
-**Installation du serveur**
-
-#todo
 
 **Installation de la base de données**
 
@@ -26,11 +28,6 @@ Geonature
 UserHub
 ------------
 
-**Installation du serveur**
-
-#todo
-
-
 **Installation de la base de données**
 
 #todo
@@ -45,12 +42,6 @@ UserHub
 
 TaxHub
 ------------
-
-
-**Installation du serveur**
-
-#todo
-
 
 **Installation de la base de données**
 
@@ -68,11 +59,6 @@ TaxHub
 
 Geonature-atlas
 ------------
-
-**Installation du serveur**
-
-#todo
-
 
 **Installation de la base de données**
 
