@@ -41,30 +41,49 @@ Durant toute la procédure d’installation, travailler avec l’utilisateur geo
 
 
 
-**Serveur web**
+**Environnement logiciel**
 
-
-- Installation du serveur web
 
 	``add-apt-repository ppa:ondrej/php``
 
 	``apt update``
 
-	``sudo apt-get install php5.6 --allow-unauthenticated``
+	``sudo apt-get install -y php5.6 --allow-unauthenticated``
 
-	``sudo apt-get install apache2``
+	``sudo apt-get install -y curl unzip git``
 
-	``sudo apt-get install libapache2-mod-php5.6``
+	``sudo apt-get install -y apache2``
 
-	``sudo apt-get install php5.6-gd``
+	``sudo apt-get install -y libapache2-mod-php5.6``
 
-	``sudo apt-get install libapache2-mod-wsgi``
+	``sudo apt-get install -y libapache2-mod-wsgi``
 
-	``sudo apt-get install php5.6-pgsql`` 
+	``sudo apt-get install -y libapache2-mod-perl2``
 
-	``sudo apt-get install cgi-mapserver``
+	``sudo apt-get install -y php5.6-gd``
 
-	``sudo apt-get install gdal-bin``
+	``sudo apt-get install -y php5.6-pgsql`` 
+
+	``sudo apt-get install -y cgi-mapserver``
+
+	``sudo apt-get install -y gdal-bin``
+
+	``sudo apt-get install -y libgeos-dev``
+
+	``sudo apt-get install -y postgresql postgis postgresql-server-dev-9.5``
+
+	``sudo apt-get install -y postgis --allow-unauthenticated``
+
+	``sudo apt-get install -y postgresql-server-dev-9.5``
+
+	``sudo apt-get install -y python-dev python-pip libpq-dev python-setuptools python-gdal python-virtualenv build-essential`` # a verifier
+
+	``sudo apt-get install -y npm``  # a verifier
+ 
+	``sudo apt-get install -y python3 python3-dev``   # a verifier
+
+	``sudo pip install virtualenv``  # a verifier
+
 
 
 - Si PHP 7 est installé et activé, et que vous souhaitez switcher sur PHP 5.6 :
@@ -78,20 +97,21 @@ Durant toute la procédure d’installation, travailler avec l’utilisateur geo
 
 
 
-- Activer le mod_rewrite et mod_wsgi, et redémarrer Apache
+
+
+- Activation des modules d'Apache
 
 	``sudo a2enmod wsgi``
+
+	``sudo a2enmod cgi``
 
 	``sudo a2enmod rewrite``
 
 	``sudo apache2ctl restart``
 
+
 - Vérifier que le répertoire ``/tmp`` existe et que l’utilisateur ``www-data`` y a accès en lecture/écriture.
 
-
-**Base de données**
-
-#TODO
 
 
 
