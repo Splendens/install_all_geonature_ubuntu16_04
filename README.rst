@@ -173,7 +173,7 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 	``sudo /etc/init.d/postgresql restart``
 
 
-- Création des utilisateurs postgreSQL (renseigner les utilisateurs et mots de passe avant de lancer les commandes :)
+- Création des utilisateurs postgreSQL (renseigner les utilisateurs et mots de passe avant de lancer les commandes)
 
 	``sudo -n -u postgres -s psql -c "CREATE ROLE geonatuser WITH LOGIN PASSWORD 'user_pg_pass_a_changer';"``
 
@@ -197,7 +197,11 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 	``sudo a2enmod rewrite``
 
-	``sudo apache2ctl restart``
+	``sudo a2enmod proxy``
+
+	``sudo a2enmod proxy_http``
+
+	``sudo services restart apache2``
 
 
 - Vérifier que le répertoire ``/tmp`` existe et que l’utilisateur ``www-data`` y a accès en lecture/écriture.
