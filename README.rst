@@ -18,7 +18,7 @@ On commence l'installation en se connectant au serveur en SSH avec l’utilisate
 
     ``adduser --home /home/geonatureadmin geonatureadmin``
 
-+ Entrer les informations demandées, notamment le mot de passe de l'utilisateur geonatureadmin
+	+ Entrer les informations demandées, notamment le mot de passe de l'utilisateur geonatureadmin
 
 
 - Donner les droits sudo à l'utilisateur
@@ -41,11 +41,13 @@ Durant toute la procédure d’installation, travailler avec l’utilisateur geo
 	``sudo apt-get install apache2``
 
 
-	+Installation de PHP 5.6
+	+ Installation de PHP 5.6
 
 	``add-apt-repository ppa:ondrej/php``
 	``apt update``
 	``sudo apt-get install php5.6 --allow-unauthenticated``
+
+
 
 
 Geonature
