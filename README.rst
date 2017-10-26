@@ -57,7 +57,7 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 - Renseigner les variables à utiliser dans le fichier de configuration ``install_all.ini``
 
-	+ La clé IGN peut être générée sur `professionnels.ign.fr <http://professionnels.ign.fr/>`_ : pour un déploiement en local, choisir un type de sécurisation ``Referer``, et des valeurs de sécuisation ``localhost, localhost/*`` (ou autre selon la configuration des VirtualHost d'Apache)
+	+ La clé IGN ``macleign`` peut être générée sur `professionnels.ign.fr <http://professionnels.ign.fr/>`_ : pour un déploiement en local, choisir un type de sécurisation ``Referer``, et des valeurs de sécuisation ``localhost, localhost/*`` (ou autre selon la configuration des VirtualHost d'Apache)
 
 	+ Renseigner les différents mots de passe : ``monpassachanger``
 
@@ -149,7 +149,7 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 	``sudo a2enmod php5.6``
 
-	``sudo service restart apache2``
+	``sudo services restart apache2``
 
 
 
