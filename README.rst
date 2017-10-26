@@ -7,8 +7,45 @@ Exemple repris à partir de l'`installation globale <http://geonature.readthedoc
 Installation du serveur
 ------------
 
-#todo
+On commence l'installation en se connectant au serveur en SSH avec l’utilisateur linux ROOT.
 
+- Mis à jour la liste des dépôts Linux
+
+	``apt-get update``
+
+
+- Création d’un utilisateur linux nommé geonatureadmin (par exemple). Dans cet exemple, le répertoire de cet utilisateur est dans /home/geonatureadmin
+
+    ``adduser --home /home/geonatureadmin geonatureadmin``
+
++ Entrer les informations demandées, notamment le mot de passe de l'utilisateur geonatureadmin
+
+
+- Donner les droits sudo à l'utilisateur
+
+    ``adduser geonatureadmin sudo``
+
+- Ajout de l'utilisateur aux groupes www-data et root
+
+	``usermod -g www-data geonatureadmin``
+	``usermod -a -G root geonatureadmin``
+
+
+
+Durant toute la procédure d’installation, travailler avec l’utilisateur geonatureadmin (ou tout autre utilisateur linux ayant les droits sudo). Ne changer d’utilisateur que lorsque que la documentation le spécifie.
+
+
+
+- Installation du serveur web
+
+	``sudo apt-get install apache2``
+
+
+	+Installation de PHP 5.6
+
+	``add-apt-repository ppa:ondrej/php``
+	``apt update``
+	``sudo apt-get install php5.6 --allow-unauthenticated``
 
 
 Geonature
