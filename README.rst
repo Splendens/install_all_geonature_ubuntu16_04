@@ -120,7 +120,7 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 	``sudo apt-get install -y libgeos-dev``
 
-	``sudo apt-get install -y postgresql postgis postgresql-server-dev-9.5``
+	``sudo apt-get install -y postgresql``
 
 	``sudo apt-get install -y postgis --allow-unauthenticated``
 
