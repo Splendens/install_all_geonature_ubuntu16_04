@@ -86,6 +86,7 @@ Durant toute la procédure d’installation, travailler avec l’utilisateur geo
 
 	``sudo apache2ctl restart``
 
+- Vérifier que le répertoire ``/tmp`` existe et que l’utilisateur ``www-data`` y a accès en lecture/écriture.
 
 
 **Base de données**
