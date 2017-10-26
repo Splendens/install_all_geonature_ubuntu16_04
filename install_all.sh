@@ -23,16 +23,16 @@ echo "Installation de l'environnement logiciel..."
 sudo add-apt-repository ppa:ondrej/php -y
 
 sudo apt-get update
-sudo apt-get -y install ntpdate
-sudo ntpdate-debian
+#sudo apt-get -y install ntpdate
+#sudo ntpdate-debian
 sudo apt-get install -y curl unzip git
-sudo apt-get install -y apache2 php5 libapache2-mod-php5 libapache2-mod-wsgi libapache2-mod-perl2
-sudo apt-get install -y php5-gd php5-pgsql
+sudo apt-get install -y apache2 php5.6 libapache2-mod-php5.6 libapache2-mod-wsgi libapache2-mod-perl2 --allow-unauthenticated
+sudo apt-get install -y php5.6-gd php5.6-pgsql
 sudo apt-get install -y cgi-mapserver gdal-bin libgeos-dev
-sudo apt-get install -y postgresql postgis postgresql-server-dev-9.4
+sudo apt-get install -y postgresql postgis postgresql-server-dev-9.5 --allow-unauthenticated
 sudo apt-get install -y python-dev python-pip libpq-dev python-setuptools python-gdal python-virtualenv build-essential
-sudo apt-get install -y npm
-# sudo apt-get install -y python3 python3-dev 
+sudo apt-get install -y npm --allow-unauthenticated
+sudo apt-get install -y python3 python3-dev 
 
 sudo apt-get install -y python-pip
 sudo pip install virtualenv

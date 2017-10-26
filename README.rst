@@ -1,7 +1,7 @@
 Installation globale de Geonature, UsersHub, TaxHub et Geonature-Atlas, pour un serveur Ubuntu 16.04
 ===============
 
-Exemple repris à partir de l'`installation globale <http://geonature.readthedocs.io/fr/latest/install_all/README.html>`_ des applications Geonature de gestion de données naturalistes (`GeoNature <https://github.com/PnEcrins/GeoNature>`_, `UsersHub <https://github.com/PnEcrins/UsersHub>`_, `TaxHub <https://github.com/PnX-SI/TaxHub>`_ et `GeoNature-atlas <https://github.com/PnEcrins/GeoNature-atlas>`_).
+Exemple repris à partir de l'`installation globale <http://geonature.readthedocs.io/fr/latest/install_all/README.html>`_ des applications Geonature de gestion de données naturalistes (`GeoNature <https://github.com/PnEcrins/GeoNature>`_ version 1.9.0, `UsersHub <https://github.com/PnEcrins/UsersHub>`_, `TaxHub <https://github.com/PnX-SI/TaxHub>`_ et `GeoNature-atlas <https://github.com/PnEcrins/GeoNature-atlas>`_).
 
 
 Installation du serveur
@@ -48,11 +48,25 @@ Se reconnecter avec le nouvel utilisateur pour ne pas faire l’installation en 
 
 	``wget https://github.com/Splendens/install_all_geonature_ubuntu16_04/blob/master/install_all.sh``
 
+
 Changer les droits du fichier d’installation pour pouvoir l’éxecuter
 
 	``sudo chmod +x install_all.sh``
 
 Pour plus d'informations, consulter la `documentation <http://geonature.readthedocs.io/fr/latest/install_all/2016-12-exemple-deploiement-pnr.html#installation>`_ du projet Geonature.
+
+- Renseigner les variables à utiliser dans le fichier de configuration ``install_all.ini``
+
+	+ La clé IGN peut être générée sur `professionnels.ign.fr <http://professionnels.ign.fr/>`_ : pour un déploiement en local, choisir un type de sécurisation ``Referer``, et des valeurs de sécuisation ``localhost, localhost/*`` (ou autre selon la configuration des VirtualHost d'Apache)
+
+	+ Renseigner les différents mots de passe : ``monpassachanger``
+
+	+ Renseigner la version de `UsersHub <https://github.com/PnEcrins/UsersHub/releases>`_ à installer : ``usershub_release``
+
+	+ Renseigner la version de `TaxHub <https://github.com/PnX-SI/TaxHub/releases>`_ à installer : ``taxhub_release``
+
+	+ Renseigner la version de `Geonature-Atlas <https://github.com/PnEcrins/GeoNature-atlas/releases>`_ à installer : ``atlas_release``
+
 
 - Lancer l’installation
 
@@ -66,9 +80,14 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 **Environnement logiciel**
 
 
+- Ajout des repository nécessaires 
+
 	``add-apt-repository ppa:ondrej/php``
 
 	``apt update``
+
+
+- Installation des packages
 
 	``sudo apt-get install -y php5.6 --allow-unauthenticated``
 
@@ -112,11 +131,13 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 	``sudo apt-get install -y build-essential`` 
 
-	``sudo apt-get install -y npm``  
+	``sudo apt-get install -y npm --allow-unauthenticated``  
  
 	``sudo apt-get install -y python3``
 
 	``sudo apt-get install -y python3-dev`` 
+
+	``sudo apt-get install -y supervisor`` 
 
 	``sudo pip install virtualenv`` 
 
