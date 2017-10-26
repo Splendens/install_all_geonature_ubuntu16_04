@@ -1,7 +1,5 @@
 #!/bin/bash
-# TODO : 
-    # Faire une install complète avec des données du PNE pour l'atlas
-    # Régler le soucis de doublement du prompt pour le user sudo
+# Installation complète de la suite d'outils Geonature du PNEcrins, pour un serveur Ubuntu 16.04 LTS
 
 # Configuration initiale de l'installation serveur
 . install_all.ini
@@ -25,21 +23,38 @@ sudo add-apt-repository ppa:ondrej/php -y
 sudo apt-get update
 #sudo apt-get -y install ntpdate
 #sudo ntpdate-debian
-sudo apt-get install -y curl unzip git
-sudo apt-get install -y apache2 php5.6 libapache2-mod-php5.6 libapache2-mod-wsgi libapache2-mod-perl2 --allow-unauthenticated
+sudo apt-get install -y curl
+sudo apt-get install -y unzip
+sudo apt-get install -y git
+sudo apt-get install -y apache2 
+sudo apt-get install -y php5.6 --allow-unauthenticated
+sudo apt-get install -y libapache2-mod-php5.6 
+sudo apt-get install -y libapache2-mod-wsgi 
+sudo apt-get install -y libapache2-mod-perl2 --allow-unauthenticated
 sudo apt-get install -y php5.6-gd php5.6-pgsql
-sudo apt-get install -y cgi-mapserver gdal-bin libgeos-dev
-sudo apt-get install -y postgresql postgis postgresql-server-dev-9.5 --allow-unauthenticated
-sudo apt-get install -y python-dev python-pip libpq-dev python-setuptools python-gdal python-virtualenv build-essential
+sudo apt-get install -y cgi-mapserver
+sudo apt-get install -y gdal-bin
+sudo apt-get install -y libgeos-dev
+sudo apt-get install -y postgresql
+sudo apt-get install -y postgis --allow-unauthenticated
+sudo apt-get install -y postgresql-server-dev-9.5 --allow-unauthenticated
+sudo apt-get install -y python-dev
+sudo apt-get install -y python-pip 
+sudo apt-get install -y libpq-dev
+sudo apt-get install -y python-setuptools 
+sudo apt-get install -y python-gdal
+sudo apt-get install -y python-virtualenv
+sudo apt-get install -y build-essential
 sudo apt-get install -y npm --allow-unauthenticated
-sudo apt-get install -y python3 python3-dev 
+sudo apt-get install -y python3
+sudo apt-get install -y python3-dev 
+sudo apt-get install -y supervisor 
 
-sudo apt-get install -y python-pip
 sudo pip install virtualenv
 
 echo "Configuration de postgreSQL..."
 sudo sed -e "s/#listen_addresses = 'localhost'/listen_addresses = '*'/g" -i /etc/postgresql/*/main/postgresql.conf
-sudo sh -c 'echo "host    all             all             0.0.0.0/0            md5" >> /etc/postgresql/9.4/main/pg_hba.conf'
+sudo sh -c 'echo "host    all             all             0.0.0.0/0            md5" >> /etc/postgresql/9.5/main/pg_hba.conf'
 sudo /etc/init.d/postgresql restart
 
 echo "Création des utilisateurs postgreSQL..."

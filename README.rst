@@ -41,7 +41,7 @@ Durant toute la procédure d’installation, travailler avec l’utilisateur geo
 
 Se reconnecter avec le nouvel utilisateur pour ne pas faire l’installation en ROOT.
 
-Se placer dans le répertoire home de l'utilisateur
+Se placer dans le répertoire de l'utilisateur
 
 	``cd /home/geonatureadmin``
 
@@ -94,11 +94,15 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 - Installation des packages
 
+	``sudo apt-get install -y apache2``
+
 	``sudo apt-get install -y php5.6 --allow-unauthenticated``
 
-	``sudo apt-get install -y curl unzip git``
+	``sudo apt-get install -y curl``
 
-	``sudo apt-get install -y apache2``
+	``sudo apt-get install -y unzip``
+
+	``sudo apt-get install -y git``
 
 	``sudo apt-get install -y libapache2-mod-php5.6``
 
