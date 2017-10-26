@@ -39,7 +39,29 @@ On commence l'installation en se connectant au serveur en SSH avec l’utilisate
 
 Durant toute la procédure d’installation, travailler avec l’utilisateur geonatureadmin (ou tout autre utilisateur linux ayant les droits sudo). Ne changer d’utilisateur que lorsque que la documentation le spécifie.
 
+Se reconnecter avec le nouvel utilisateur pour ne pas faire l’installation en ROOT.
 
+**1) Récupérer les fichiers d'installation ``install_all.ini`` et ``install_all.sh``**
+
+	``wget https://github.com/Splendens/install_all_geonature_ubuntu16_04/blob/master/install_all.ini``
+
+
+	``wget https://github.com/Splendens/install_all_geonature_ubuntu16_04/blob/master/install_all.sh``
+
+Changer les droits du fichier d’installation pour pouvoir l’éxecuter
+
+	``sudo chmod +x install_all.sh``
+
+Pour plus d'informations, consulter la `documentation <http://geonature.readthedocs.io/fr/latest/install_all/2016-12-exemple-deploiement-pnr.html#installation>`_ du projet Geonature.
+
+- Lancer l’installation
+
+    ``./install_all.sh``
+
+
+
+
+**2) OU lancer l'installation commandes par commandes** 
 
 **Environnement logiciel**
 
@@ -74,15 +96,29 @@ Durant toute la procédure d’installation, travailler avec l’utilisateur geo
 
 	``sudo apt-get install -y postgis --allow-unauthenticated``
 
-	``sudo apt-get install -y postgresql-server-dev-9.5``
+	``sudo apt-get install -y postgresql-server-dev-9.5 --allow-unauthenticated``
 
-	``sudo apt-get install -y python-dev python-pip libpq-dev python-setuptools python-gdal python-virtualenv build-essential`` # a verifier
+	``sudo apt-get install -y python-dev``
 
-	``sudo apt-get install -y npm``  # a verifier
+	``sudo apt-get install -y python-pip``
+
+	``sudo apt-get install -y libpq-dev``
+
+	``sudo apt-get install -y python-setuptools``
+
+	``sudo apt-get install -y python-gdal``
+
+	``sudo apt-get install -y python-virtualenv``
+
+	``sudo apt-get install -y build-essential`` 
+
+	``sudo apt-get install -y npm``  
  
-	``sudo apt-get install -y python3 python3-dev``   # a verifier
+	``sudo apt-get install -y python3``
 
-	``sudo pip install virtualenv``  # a verifier
+	``sudo apt-get install -y python3-dev`` 
+
+	``sudo pip install virtualenv`` 
 
 
 
@@ -92,9 +128,7 @@ Durant toute la procédure d’installation, travailler avec l’utilisateur geo
 
 	``sudo a2enmod php5.6``
 
-	``systemctl restart apache2``
-
-
+	``sudo service restart apache2``
 
 
 
