@@ -139,8 +139,8 @@ sudo sh -c 'echo "" >> /etc/apache2/sites-available/000-default.conf'
 sudo sh -c 'echo "# vim: syntax=apache ts=4 sw=4 sts=4 sr noet" >> /etc/apache2/sites-available/000-default.conf'
 
 sudo a2ensite taxhub
-sudo a2enmod proxy
-sudo a2enmod proxy_http
+#sudo a2enmod proxy
+#sudo a2enmod proxy_http
 # Installation et configuration de l'application TaxHub
 ./install_app.sh
 sudo apache2ctl restart

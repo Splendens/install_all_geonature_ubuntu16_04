@@ -13,9 +13,9 @@ Se placer dans le répertoire de l'utilisateur
 
 - Récupérer les fichiers d'installation install_all.ini et install_all_app.sh
 
-	``wget https://github.com/Splendens/install_all_geonature_ubuntu16_04/blob/master/install_all.ini``
+	``wget https://raw.githubusercontent.com/Splendens/install_all_geonature_ubuntu16_04/master/install_all.ini``
 
-	``wget https://github.com/Splendens/install_all_geonature_ubuntu16_04/blob/master/install_all_app.sh``
+	``wget https://raw.githubusercontent.com/Splendens/install_all_geonature_ubuntu16_04/master/install_all_app.sh``
 
 
 - Si ce n'est pas déjà fait, renseigner les variables à utiliser dans le fichier de configuration ``install_all.ini``
