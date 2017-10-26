@@ -126,6 +126,8 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 	``sudo apt-get install -y postgresql-server-dev-9.5 --allow-unauthenticated``
 
+	``sudo apt-get install -y postgresql-client``
+
 	``sudo apt-get install -y python-dev``
 
 	``sudo apt-get install -y python-pip``
@@ -162,6 +164,30 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 
 
+- Configuration de PostgreSQL
+
+	``sudo sed -e "s/#listen_addresses = 'localhost'/listen_addresses = '*'/g" -i /etc/postgresql/*/main/postgresql.conf``
+
+	``sudo sh -c 'echo "host    all             all             0.0.0.0/0            md5" >> /etc/postgresql/9.5/main/pg_hba.conf'``
+	
+	``sudo /etc/init.d/postgresql restart``
+
+
+- Création des utilisateurs postgreSQL (renseigner les utilisateurs et mots de passe avant de lancer les commandes :)
+
+	``sudo -n -u postgres -s psql -c "CREATE ROLE geonatuser WITH LOGIN PASSWORD 'user_pg_pass_a_changer';"``
+
+	``sudo -n -u postgres -s psql -c "CREATE ROLE geonatatlas WITH LOGIN PASSWORD 'user_atlas_pass_a_changer';"``
+
+
+	+ si l'utilisateur superuser de postgres n'a pas encore été créé 
+
+	``sudo -n -u postgres -s psql -c "CREATE ROLE mon_admin_pg WITH SUPERUSER LOGIN PASSWORD 'admin_pg_pass_a_changer';"``
+
+	+ Pour changer les mots de passe d'un user
+
+	``sudo -n -u postgres -s psql -c "ALTER ROLE mon_admin_pg WITH SUPERUSER LOGIN PASSWORD 'admin_pg_pass_a_changer';"``
+	 
 
 - Activation des modules d'Apache
 
@@ -175,7 +201,6 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 
 - Vérifier que le répertoire ``/tmp`` existe et que l’utilisateur ``www-data`` y a accès en lecture/écriture.
-
 
 
 

@@ -28,6 +28,7 @@ sudo apt-get install -y apache2 php5.6 libapache2-mod-php5.6 libapache2-mod-wsgi
 sudo apt-get install -y php5.6-gd php5.6-pgsql
 sudo apt-get install -y cgi-mapserver gdal-bin libgeos-dev
 sudo apt-get install -y postgresql postgis postgresql-server-dev-9.5 --allow-unauthenticated
+sudo apt-get install -y postgresql-client 
 sudo apt-get install -y python-dev python-pip libpq-dev python-setuptools python-gdal python-virtualenv build-essential
 sudo apt-get install -y npm --allow-unauthenticated
 sudo apt-get install -y python3 python3-dev 
