@@ -41,6 +41,11 @@ Durant toute la procédure d’installation, travailler avec l’utilisateur geo
 
 Se reconnecter avec le nouvel utilisateur pour ne pas faire l’installation en ROOT.
 
+Se placer dans le répertoire home de l'utilisateur
+
+	``cd /home/geonatureadmin``
+
+
 **1) Récupérer les fichiers d'installation ``install_all.ini`` et ``install_all.sh``**
 
 	``wget https://github.com/Splendens/install_all_geonature_ubuntu16_04/blob/master/install_all.ini``
@@ -65,7 +70,7 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 	+ Renseigner la version de `TaxHub <https://github.com/PnX-SI/TaxHub/releases>`_ à installer : ``taxhub_release``
 
-	+ Renseigner la version de `Geonature-Atlas <https://github.com/PnEcrins/GeoNature-atlas/releases>`_ à installer : ``atlas_release``
+	+ Renseigner la version de `Geonature-atlas <https://github.com/PnEcrins/GeoNature-atlas/releases>`_ à installer : ``atlas_release``
 
 
 - Lancer l’installation
@@ -75,7 +80,7 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 
 
-**2) OU lancer l'installation commandes par commandes** 
+**2) OU lancer l'installation commande par commande** 
 
 **Environnement logiciel**
 
