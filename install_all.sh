@@ -18,6 +18,10 @@ echo "Installation de l'environnement logiciel..."
 #sudo sh -c 'echo "" >> /etc/apt/sources.list'
 #sudo sh -c 'echo "#Backports" >> /etc/apt/sources.list'
 #sudo sh -c 'echo "deb http://http.debian.net/debian jessie-backports main contrib non-free" >> /etc/apt/sources.list'
+
+# ajout des repository nécessaires
+sudo add-apt-repository ppa:ondrej/php -y
+
 sudo apt-get update
 sudo apt-get -y install ntpdate
 sudo ntpdate-debian
@@ -30,6 +34,7 @@ sudo apt-get install -y python-dev python-pip libpq-dev python-setuptools python
 sudo apt-get install -y npm
 # sudo apt-get install -y python3 python3-dev 
 
+sudo apt-get install -y python-pip
 sudo pip install virtualenv
 
 echo "Configuration de postgreSQL..."
