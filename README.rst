@@ -44,8 +44,11 @@ Durant toute la procédure d’installation, travailler avec l’utilisateur geo
 	+ Installation de PHP 5.6
 
 	``add-apt-repository ppa:ondrej/php``
+
 	``apt update``
+
 	``sudo apt-get install php5.6 --allow-unauthenticated``
+	
 
 
 
