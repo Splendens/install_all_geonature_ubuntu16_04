@@ -80,11 +80,11 @@ Durant toute la procédure d’installation, travailler avec l’utilisateur geo
 
 - Activer le mod_rewrite et mod_wsgi, et redémarrer Apache
 
-``sudo a2enmod wsgi``
+	``sudo a2enmod wsgi``
 
-``sudo a2enmod rewrite``
+	``sudo a2enmod rewrite``
 
-``sudo apache2ctl restart``
+	``sudo apache2ctl restart``
 
 
 
