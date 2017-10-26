@@ -52,6 +52,8 @@ echo "Activation des modules apache rewrite, wsgi et cgi..."
 sudo a2enmod rewrite
 sudo a2enmod cgi
 sudo a2enmod wsgi
+sudo a2enmod proxy
+sudo a2enmod proxy_http
 sudo apache2ctl restart
 
 # Installation de UsersHub avec l'utilisateur courant

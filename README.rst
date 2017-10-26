@@ -179,14 +179,6 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 	``sudo -n -u postgres -s psql -c "CREATE ROLE geonatatlas WITH LOGIN PASSWORD 'user_atlas_pass_a_changer';"``
 
-
-	+ si l'utilisateur superuser de postgres n'a pas encore été créé 
-
-	``sudo -n -u postgres -s psql -c "CREATE ROLE mon_admin_pg WITH SUPERUSER LOGIN PASSWORD 'admin_pg_pass_a_changer';"``
-
-	+ Pour changer les mots de passe d'un user
-
-	``sudo -n -u postgres -s psql -c "ALTER ROLE mon_admin_pg WITH SUPERUSER LOGIN PASSWORD 'admin_pg_pass_a_changer';"``
 	 
 
 - Activation des modules d'Apache
@@ -209,8 +201,26 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 
 
-Geonature
+UserHub
 ------------
+
+**Téléchargement de UsersHub**
+
+Remplacer ``X.Y.Z`` par la version de `TaxHub <https://github.com/PnX-SI/TaxHub/releases>`_ à installer (par exemple 1.2.2)
+
+	``cd /tmp``
+
+	``wget https://github.com/PnEcrins/UsersHub/archive/X.Y.Z.zip``
+
+	``unzip X.Y.Z.zip``
+
+	``rm X.Y.Z.zip``
+
+	``mv UsersHub-X.Y.Z /home/geonatureadmin/usershub/``
+
+	``cd /home/geonatureadmin/usershub``
+
+
 
 **Installation de la base de données**
 
@@ -223,8 +233,26 @@ Geonature
 
 
 
-UserHub
+
+Geonature
 ------------
+
+**Téléchargement de Geonature**
+
+Remplacer ``X.Y.Z`` par la version de `GeoNature <https://github.com/PnX-SI/GeoNature/releases>`_ à installer (par exemple 1.9.0)
+
+	``cd /tmp``
+
+	``wget https://github.com/PnEcrins/GeoNature/archive/X.Y.Z.zip``
+
+	``unzip X.Y.Z.zip``
+
+	``rm X.Y.Z.zip``
+
+	``mv GeoNature-X.Y.Z /home/geonatureadmin/geonature/``
+
+	``cd /home/geonatureadmin/geonature``
+
 
 **Installation de la base de données**
 
@@ -240,6 +268,24 @@ UserHub
 
 TaxHub
 ------------
+
+**Téléchargement de TaxHub**
+
+Remplacer ``X.Y.Z`` par la version de `TaxHub <https://github.com/PnX-SI/TaxHub/releases>`_ à installer (par exemple 1.3.1)
+
+	``cd /tmp``
+
+	``wget https://github.com/PnX-SI/TaxHub/archive/X.Y.Z.zip``
+
+	``unzip X.Y.Z.zip``
+
+	``rm X.Y.Z.zip``
+
+	``mv TaxHub-X.Y.Z /home/geonatureadmin/taxhub/``
+
+	``cd /home/geonatureadmin/taxhub``
+
+
 
 **Installation de la base de données**
 
@@ -257,6 +303,23 @@ TaxHub
 
 Geonature-atlas
 ------------
+
+**Téléchargement de Geonature-atlas**
+
+Remplacer ``X.Y.Z`` par la version de `Geonature-atlas <https://github.com/PnEcrins/GeoNature-atlas/releases>`_ à installer (par exemple 1.2.6)
+
+	``cd /tmp``
+
+	``wget https://github.com/PnEcrins/GeoNature-atlas/archive/X.Y.Z.zip``
+
+	``unzip X.Y.Z.zip``
+
+	``rm X.Y.Z.zip``
+
+	``mv GeoNature-atlas-X.Y.Z /home/geonatureadmin/atlas/``
+
+	``cd /home/geonatureadmin/atlas``
+
 
 **Installation de la base de données**
 
