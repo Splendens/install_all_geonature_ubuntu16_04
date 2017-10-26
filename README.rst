@@ -7,6 +7,9 @@ Exemple repris à partir de l'`installation globale <http://geonature.readthedoc
 Installation du serveur
 ------------
 
+**Utilisateur**
+
+
 On commence l'installation en se connectant au serveur en SSH avec l’utilisateur linux ROOT.
 
 - Mis à jour la liste des dépôts Linux
@@ -18,16 +21,18 @@ On commence l'installation en se connectant au serveur en SSH avec l’utilisate
 
     ``adduser --home /home/geonatureadmin geonatureadmin``
 
-	+ Entrer les informations demandées, notamment le mot de passe de l'utilisateur geonatureadmin
+	+ Entrer les informations demandées, notamment le mot de passe de l'utilisateur
 
 
 - Donner les droits sudo à l'utilisateur
 
     ``adduser geonatureadmin sudo``
 
+
 - Ajout de l'utilisateur aux groupes www-data et root
 
 	``usermod -g www-data geonatureadmin``
+
 	``usermod -a -G root geonatureadmin``
 
 
@@ -36,19 +41,56 @@ Durant toute la procédure d’installation, travailler avec l’utilisateur geo
 
 
 
+**Serveur web**
+
+
 - Installation du serveur web
-
-	``sudo apt-get install apache2``
-
-
-	+ Installation de PHP 5.6
 
 	``add-apt-repository ppa:ondrej/php``
 
 	``apt update``
 
 	``sudo apt-get install php5.6 --allow-unauthenticated``
-	
+
+	``sudo apt-get install apache2``
+
+	``sudo apt-get install libapache2-mod-php5.6``
+
+	``sudo apt-get install php5.6-gd``
+
+	``sudo apt-get install libapache2-mod-wsgi``
+
+	``sudo apt-get install php5.6-pgsql`` 
+
+	``sudo apt-get install cgi-mapserver``
+
+	``sudo apt-get install gdal-bin``
+
+
+- Si PHP 7 est installé et activé, et que vous souhaitez switcher sur PHP 5.6 :
+
+	``sudo a2dismod php7.0``
+
+	``sudo a2enmod php5.6``
+
+	``systemctl restart apache2``
+
+
+
+
+- Activer le mod_rewrite et mod_wsgi, et redémarrer Apache
+
+``sudo a2enmod wsgi``
+
+``sudo a2enmod rewrite``
+
+``sudo apache2ctl restart``
+
+
+
+**Base de données**
+
+#TODO
 
 
 
