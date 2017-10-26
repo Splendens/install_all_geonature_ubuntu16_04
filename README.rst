@@ -206,7 +206,7 @@ UserHub
 
 **Téléchargement de UsersHub**
 
-Remplacer ``X.Y.Z`` par la version de `TaxHub <https://github.com/PnX-SI/TaxHub/releases>`_ à installer (par exemple 1.2.2)
+Remplacer ``X.Y.Z`` par la version de `UsersHub <https://github.com/PnEcrins/UsersHub/releases>`_  à installer (par exemple 1.2.2)
 
 	``cd /tmp``
 
