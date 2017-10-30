@@ -82,7 +82,7 @@ Adaptations des applications :
 
 - **TaxHub** - si TaxHub s'ouvre sur un page blanche, vérifier que le répertoire /static/node_modules/ est bien présent, s'il est absent se placer dans /static/ ``cd /home/geonatureadmin/taxhub/static/`` et lancer la commande ``sudo npm install`` ; si la commande n'a pas fonctionné (pas de création du répertoire /static/node_modules/), lancer les commandes ``npm config set registry http://registry.npmjs.org/`` puis ``npm install``
 
-- **Geonature-atlas** - adapter le rendu sur sont territoire, voir : https://github.com/Splendens/atlas_biodiv_pdl/blob/master/modifdb/teritoires.rst
+- **Geonature-atlas** - adapter le rendu sur son territoire, voir : https://github.com/Splendens/atlas_biodiv_pdl/blob/master/modifdb/teritoires.rst
 
 
 En cas d'erreurs ou pour plus d'informations sur les applications, leur installation et leur adaptation, se référer à la documentation de `UsersHub <http://usershub.readthedocs.io/fr/latest/installation.html#configuration-de-l-application>`_, `Geonature <http://geonature.readthedocs.io/fr/latest/installation.html#configuration-de-l-application>`_,  `TaxHub <http://taxhub.readthedocs.io/fr/latest/installation.html#creation-de-la-base-de-donnees>`_ et `Geonature-Atlas <https://github.com/PnEcrins/GeoNature-atlas/blob/master/docs/installation.rst>`_.
