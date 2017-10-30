@@ -78,8 +78,7 @@ Adaptations des applications :
 
 - **UsersHub** - vérifier que l'utilisateur propriétaire de la usershubdb est bien le même que celui de geonaturedb ; éditer manuellement le fichier config/dbconnexions.json et y ajouter les paramètres de connexions à toutes les bd qu’on souhaite synchroniser avec UsersHub
 
-- **Geonature** - selon besoin, éditer les fichiers de configuration apache : apache/sf.conf, apache/synthese.conf, apache/wms.conf ; et éditer les fichiers de configuration de l'application : web/js/config.js, web/js/configmap.js, 
-lib/sfGeonatureConfig.php 
+- **Geonature** - selon besoin, éditer les fichiers de configuration apache : apache/sf.conf, apache/synthese.conf, apache/wms.conf ; et éditer les fichiers de configuration de l'application : web/js/config.js, web/js/configmap.js, lib/sfGeonatureConfig.php 
 
 - **TaxHub** - 
 
