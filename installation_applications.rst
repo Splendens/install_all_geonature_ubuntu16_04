@@ -67,18 +67,26 @@ Notes
 
 Corrections apportées à l'installation globale :
 
-
 - **Geonature** - Modifications du install_db : corrections des liens morts, ajout de l'extension postgis_topology.
 
-
-
-- **TaxHub** - Modification du paramétrage d'Apache : écoute sur le port 5000 à la place de 8000.  
-
-
+- **TaxHub** - Modification du paramétrage d'Apache : écoute sur le port 5000 à la place de 8000.
 
 - **Geonature-atlas** - Modifications du install_db : corrections des liens morts, ajout de l'extension postgis_topology.
 
 
-En cas d'erreurs ou pour adapter les applications, se référer à la documentation de `UsersHub <http://usershub.readthedocs.io/fr/latest/installation.html#configuration-de-l-application>`_, `Geonature <http://geonature.readthedocs.io/fr/latest/installation.html#configuration-de-l-application>`_,  `TaxHub <http://taxhub.readthedocs.io/fr/latest/installation.html#creation-de-la-base-de-donnees>`_ et `Geonature-Atlas <https://github.com/PnEcrins/GeoNature-atlas/blob/master/docs/installation.rst>`_.
+Adaptations des applications :
+
+- **UsersHub** - vérifier que l'utilisateur propriétaire de la usershubdb est bien le même que celui de geonaturedb ; éditer manuellement le fichier config/dbconnexions.json et y ajouter les paramètres de connexions à toutes les bd qu’on souhaite synchroniser avec UsersHub
+
+- **Geonature** - selon besoin, éditer les fichiers de configuration apache : apache/sf.conf, apache/synthese.conf, apache/wms.conf ; et éditer les fichiers de configuration de l'application : web/js/config.js, web/js/configmap.js, 
+lib/sfGeonatureConfig.php 
+
+- **TaxHub** - 
+
+- **Geonature-atlas** - remplacer les données test (territoire, communes)
+
+
+
+En cas d'erreurs ou pour plus d'informations sur les applications, leur installation et leur adaptation, se référer à la documentation de `UsersHub <http://usershub.readthedocs.io/fr/latest/installation.html#configuration-de-l-application>`_, `Geonature <http://geonature.readthedocs.io/fr/latest/installation.html#configuration-de-l-application>`_,  `TaxHub <http://taxhub.readthedocs.io/fr/latest/installation.html#creation-de-la-base-de-donnees>`_ et `Geonature-Atlas <https://github.com/PnEcrins/GeoNature-atlas/blob/master/docs/installation.rst>`_.
 
 
