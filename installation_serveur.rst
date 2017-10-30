@@ -207,3 +207,5 @@ Suivre la prodédure d'installation commande par commande
 
 - Vérifier que le répertoire ``/tmp`` existe et que l’utilisateur ``www-data`` y a accès en lecture/écriture.
 
+
+Passer ensuite à l'installation des applications : https://github.com/Splendens/install_all_geonature_ubuntu16_04/blob/master/installation_applications.rst
