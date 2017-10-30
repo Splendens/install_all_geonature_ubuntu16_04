@@ -63,11 +63,13 @@ Pour plus d'informations, consulter la `documentation <http://geonature.readthed
 
 	+ Renseigner les différents mots de passe : ``monpassachanger``
 
-	+ Renseigner la version de `UsersHub <https://github.com/PnEcrins/UsersHub/releases>`_ à installer : ``usershub_release``
+	+ Renseigner la version de `UsersHub <https://github.com/PnEcrins/UsersHub/releases>`_ à installer : ``usershub_release`` ; cette installation globale a été testée pour la version 1.2.2
 
-	+ Renseigner la version de `TaxHub <https://github.com/PnX-SI/TaxHub/releases>`_ à installer : ``taxhub_release``
+	+ Renseigner la version de `Geonature <https://github.com/PnX-SI/GeoNature/releases>`_ à installer : ``usershub_release`` ; cette installation globale a été testée pour la version 1.9.0
 
-	+ Renseigner la version de `Geonature-atlas <https://github.com/PnEcrins/GeoNature-atlas/releases>`_ à installer : ``atlas_release``
+	+ Renseigner la version de `TaxHub <https://github.com/PnX-SI/TaxHub/releases>`_ à installer : ``taxhub_release``, ; cette installation globale a été testée pour la version 1.3.1
+
+	+ Renseigner la version de `Geonature-atlas <https://github.com/PnEcrins/GeoNature-atlas/releases>`_ à installer : ``atlas_release`` ; cette installation globale a été testée pour la version 1.2.6
 
 
 - Changer les droits du fichier d’installation pour pouvoir l’éxecuter
