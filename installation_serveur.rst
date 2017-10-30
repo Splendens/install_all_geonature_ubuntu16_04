@@ -103,6 +103,10 @@ Suivre la prodédure d'installation commande par commande
 
 - Installation des packages
 
+	``sudo apt-get -y install ntpdate``
+	
+	``sudo ntpdate-debian``
+
 	``sudo apt-get install -y apache2``
 
 	``sudo apt-get install -y php5.6 --allow-unauthenticated``
