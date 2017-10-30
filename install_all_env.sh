@@ -21,8 +21,8 @@ echo "Installation de l'environnement logiciel..."
 sudo add-apt-repository ppa:ondrej/php -y
 
 sudo apt-get update
-#sudo apt-get -y install ntpdate
-#sudo ntpdate-debian
+sudo apt-get -y install ntpdate
+sudo ntpdate-debian
 sudo apt-get install -y curl unzip git
 sudo apt-get install -y apache2 php5.6 libapache2-mod-php5.6 libapache2-mod-wsgi libapache2-mod-perl2 --allow-unauthenticated
 sudo apt-get install -y php5.6-gd php5.6-pgsql
