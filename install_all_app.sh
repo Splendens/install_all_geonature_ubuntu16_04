@@ -94,6 +94,7 @@ sed -i -e "s/\/var\/www/$apache_document_root/g" install_app.sh
 # Installation de la base de données GeoNature en root
 rm install_db.sh
 wget https://raw.githubusercontent.com/Splendens/install_all_geonature_ubuntu16_04/master/install_geonature/install_db.sh
+sudo chmod +x install_db.sh
 sudo ./install_db.sh
 
 ./install_app.sh
@@ -241,8 +242,7 @@ sed -i "s/'LAT_LONG':.*$/\'LAT_LONG\': [$y, $x],/g" main/configuration/config.py
 
 rm install_db.sh
 wget https://raw.githubusercontent.com/Splendens/install_all_geonature_ubuntu16_04/master/install_atlas/install_db.sh
-sudo ./install_db.sh
-
+sudo chmod +x install_db.sh
 sudo ./install_db.sh
 
 # Configuration Apache de GeoNature-atlas
