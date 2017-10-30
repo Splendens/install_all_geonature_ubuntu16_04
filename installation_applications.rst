@@ -47,6 +47,17 @@ Le fichier install_all_app.sh va installer automatiquement les applications et l
     ``./install_all_app.sh``
 
 
+Connexion aux applications
+------------
+
+Tester les applications dans un navigateur web avec l’utilisateur par défaut (admin / admin) : 
+
+http://mondomaine/usershub
+http://mondomaine/geonature
+http://mondomaine/taxhub
+http://mondomaine/atlas
+
+
 
 Notes 
 ------------
@@ -77,3 +88,6 @@ port 5000 à la place 8000
 
 
 Modifications du install_db : corrections des liens morts, ajout de l'extension postgis_topology.
+
+
+
