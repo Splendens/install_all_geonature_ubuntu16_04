@@ -8,7 +8,7 @@ Se placer dans le répertoire de l'utilisateur
 	``cd /home/geonatureadmin``
 
 
-1) Instalation automatique 
+Instalation 
 ------------
 
 - Récupérer les fichiers d'installation install_all.ini et install_all_app.sh
@@ -36,7 +36,7 @@ Se placer dans le répertoire de l'utilisateur
 	``sudo chmod +x install_all_app.sh``
 
 
-Le fichier install_all_app.sh va automatiquement installer les applications et leur base de données
+Le fichier install_all_app.sh va installer automatiquement les applications et leur base de données
 
 - Lancer l’installation
 
@@ -44,139 +44,32 @@ Le fichier install_all_app.sh va automatiquement installer les applications et l
 
 
 
-
-2) OU installation détaillée
+Notes 
 ------------
 
-Suivre la prodédure d'installation commande par commande
+Corrections apportées à l'installation globale.
 
 
-UserHub
-------------
+**UserHub**
 
-**Téléchargement de UsersHub**
 
-Remplacer ``X.Y.Z`` par la version de `UsersHub <https://github.com/PnEcrins/UsersHub/releases>`_  à installer (par exemple 1.2.2)
 
-	``cd /tmp``
 
-	``wget https://github.com/PnEcrins/UsersHub/archive/X.Y.Z.zip``
 
-	``unzip X.Y.Z.zip``
+**Geonature**
 
-	``rm X.Y.Z.zip``
+Modifications du install_db : corrections des liens morts, ajout de l'extension postgis_topology.
 
-	``mv UsersHub-X.Y.Z /home/geonatureadmin/usershub/``
 
-	``cd /home/geonatureadmin/usershub``
 
+**TaxHub**
 
 
-**Installation de la base de données**
+port 5000 à la place 8000
 
-#todo
 
 
-**Installation de l'application**
+**Geonature-atlas**
 
-#todo
 
-
-
-
-Geonature
-------------
-
-**Téléchargement de Geonature**
-
-Remplacer ``X.Y.Z`` par la version de `GeoNature <https://github.com/PnX-SI/GeoNature/releases>`_ à installer (par exemple 1.9.0)
-
-	``cd /tmp``
-
-	``wget https://github.com/PnEcrins/GeoNature/archive/X.Y.Z.zip``
-
-	``unzip X.Y.Z.zip``
-
-	``rm X.Y.Z.zip``
-
-	``mv GeoNature-X.Y.Z /home/geonatureadmin/geonature/``
-
-	``cd /home/geonatureadmin/geonature``
-
-
-**Installation de la base de données**
-
-#todo
-
-
-**Installation de l'application**
-
-#todo
-
-
-
-
-TaxHub
-------------
-
-**Téléchargement de TaxHub**
-
-Remplacer ``X.Y.Z`` par la version de `TaxHub <https://github.com/PnX-SI/TaxHub/releases>`_ à installer (par exemple 1.3.1)
-
-	``cd /tmp``
-
-	``wget https://github.com/PnX-SI/TaxHub/archive/X.Y.Z.zip``
-
-	``unzip X.Y.Z.zip``
-
-	``rm X.Y.Z.zip``
-
-	``mv TaxHub-X.Y.Z /home/geonatureadmin/taxhub/``
-
-	``cd /home/geonatureadmin/taxhub``
-
-
-
-**Installation de la base de données**
-
-#todo
-
-
-
-**Installation de l'application**
-
-#todo
-
-
-
-
-
-Geonature-atlas
-------------
-
-**Téléchargement de Geonature-atlas**
-
-Remplacer ``X.Y.Z`` par la version de `Geonature-atlas <https://github.com/PnEcrins/GeoNature-atlas/releases>`_ à installer (par exemple 1.2.6)
-
-	``cd /tmp``
-
-	``wget https://github.com/PnEcrins/GeoNature-atlas/archive/X.Y.Z.zip``
-
-	``unzip X.Y.Z.zip``
-
-	``rm X.Y.Z.zip``
-
-	``mv GeoNature-atlas-X.Y.Z /home/geonatureadmin/atlas/``
-
-	``cd /home/geonatureadmin/atlas``
-
-
-**Installation de la base de données**
-
-#todo
-
-
-**Installation de l'application**
-
-#todo
-
+Modifications du install_db : corrections des liens morts, ajout de l'extension postgis_topology.

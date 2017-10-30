@@ -11,6 +11,11 @@ if [ "$(id -u)" == "0" ]; then
    exit 1
 fi
 
+
+###########
+# USERSHUB
+###########
+
 # Installation de UsersHub avec l'utilisateur courant
 echo "téléchargement et installation de UsersHub ..."
 cd /tmp
@@ -57,6 +62,11 @@ echo "        }" >> config/dbconnexions.json
 echo "    ]" >> config/dbconnexions.json
 echo "}" >> config/dbconnexions.json
 
+
+###########
+# GEONATURE
+###########
+
 # Installation de GeoNature avec l'utilisateur courant
 echo "Téléchargement et installation de GeoNature ..."
 cd /tmp
@@ -79,9 +89,13 @@ sed -i "s/add_sample_data=.*$/add_sample_data=$add_sample_data/g" config/setting
 sed -i "s/usershub_release=.*$/usershub_release=$usershub_release/g" config/settings.ini
 sed -i "s/taxhub_release=.*$/taxhub_release=$taxhub_release/g" config/settings.ini
 sed -i -e "s/\/var\/www/$apache_document_root/g" install_app.sh
+
+
 # Installation de la base de données GeoNature en root
+sudo rm  ./install_db.sh
+wget https://github.com/Splendens/install_all_geonature_ubuntu16_04/install_geonature/blob/master/install_db.sh
 sudo ./install_db.sh
-# Installation et configuration de l'application GeoNature
+
 ./install_app.sh
 # Configuration Apache de l'application GeoNature
 cd /home/$monuser/geonature
@@ -92,6 +106,12 @@ sed -i -e "s/mon-domaine.fr/$mondomaine/g" web/js/config.js
 sed -i -e "s/ma_cle_api_ign/$macleign/g" web/js/configmap.js
 sudo sh -c 'echo "IncludeOptional /home/'$monuser'/geonature/apache/*.conf" >> /etc/apache2/apache2.conf'
 #sudo apache2ctl restart
+
+
+
+########
+# TAXHUB
+########
 
 # Installation de TaxHub avec l'utilisateur courant
 echo "Téléchargement et installation de TaxHub ..."
@@ -144,6 +164,11 @@ sudo a2ensite taxhub
 # Installation et configuration de l'application TaxHub
 ./install_app.sh
 sudo apache2ctl restart
+
+
+##################
+# GEONATURE-ATLAS
+##################
 
 # Installation de l'atlas avec l'utilisateur courant
 echo "Téléchargement et installation de GeoNature-atlas ..."
@@ -214,6 +239,8 @@ sed -i "s/IGNAPIKEY =.*/IGNAPIKEY = \'$macleign\';/g" main/configuration/config.
 #sed -i "s/+IGNAPIKEY+/+$macleign+/g" main/configuration/config.py
 sed -i "s/'LAT_LONG':.*$/\'LAT_LONG\': [$y, $x],/g" main/configuration/config.py
 
+sudo rm  ./install_db.sh
+wget https://github.com/Splendens/install_all_geonature_ubuntu16_04/install_atlas/blob/master/install_db.sh
 sudo ./install_db.sh
 
 # Configuration Apache de GeoNature-atlas
