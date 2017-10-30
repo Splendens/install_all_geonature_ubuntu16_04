@@ -53,8 +53,11 @@ Connexion aux applications
 Tester les applications dans un navigateur web avec l’utilisateur par défaut (admin / admin) : 
 
 http://mondomaine/usershub
+
 http://mondomaine/geonature
+
 http://mondomaine/taxhub
+
 http://mondomaine/atlas
 
 
