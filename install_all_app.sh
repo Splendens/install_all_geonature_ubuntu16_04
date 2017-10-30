@@ -92,8 +92,8 @@ sed -i -e "s/\/var\/www/$apache_document_root/g" install_app.sh
 
 
 # Installation de la base de données GeoNature en root
-sudo rm  ./install_db.sh
-wget https://github.com/Splendens/install_all_geonature_ubuntu16_04/install_geonature/blob/master/install_db.sh
+rm install_db.sh
+wget https://raw.githubusercontent.com/Splendens/install_all_geonature_ubuntu16_04/master/install_geonature/install_db.sh
 sudo ./install_db.sh
 
 ./install_app.sh
@@ -239,8 +239,10 @@ sed -i "s/IGNAPIKEY =.*/IGNAPIKEY = \'$macleign\';/g" main/configuration/config.
 #sed -i "s/+IGNAPIKEY+/+$macleign+/g" main/configuration/config.py
 sed -i "s/'LAT_LONG':.*$/\'LAT_LONG\': [$y, $x],/g" main/configuration/config.py
 
-sudo rm  ./install_db.sh
-wget https://github.com/Splendens/install_all_geonature_ubuntu16_04/install_atlas/blob/master/install_db.sh
+rm install_db.sh
+wget https://raw.githubusercontent.com/Splendens/install_all_geonature_ubuntu16_04/master/install_atlas/install_db.sh
+sudo ./install_db.sh
+
 sudo ./install_db.sh
 
 # Configuration Apache de GeoNature-atlas
