@@ -79,4 +79,6 @@ Corrections apportées à l'installation globale.
 - **Geonature-atlas** - Modifications du install_db : corrections des liens morts, ajout de l'extension postgis_topology.
 
 
+En cas d'erreurs ou pour adapter les applications, se référer à la documentation de `UsersHub <http://usershub.readthedocs.io/fr/latest/installation.html#configuration-de-l-application>`_, `Geonature <http://geonature.readthedocs.io/fr/latest/installation.html#configuration-de-l-application>`_,  `TaxHub <http://taxhub.readthedocs.io/fr/latest/installation.html#creation-de-la-base-de-donnees>`_ et `Geonature-Atlas <https://github.com/PnEcrins/GeoNature-atlas/blob/master/docs/installation.rst>`_
+
 
