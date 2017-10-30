@@ -68,23 +68,15 @@ Notes
 Corrections apportées à l'installation globale.
 
 
-- **Geonature**
-
-Modifications du install_db : corrections des liens morts, ajout de l'extension postgis_topology.
+- **Geonature** - Modifications du install_db : corrections des liens morts, ajout de l'extension postgis_topology.
 
 
 
-- **TaxHub**
-
-
-Modification du paramétrage d'Apache : écoute sur le port 5000 à la place de 8000.
+- **TaxHub** - Modification du paramétrage d'Apache : écoute sur le port 5000 à la place de 8000.  
 
 
 
-- **Geonature-atlas**
-
-
-Modifications du install_db : corrections des liens morts, ajout de l'extension postgis_topology.
+- **Geonature-atlas** - Modifications du install_db : corrections des liens morts, ajout de l'extension postgis_topology.
 
 
 
