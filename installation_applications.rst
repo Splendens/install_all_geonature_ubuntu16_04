@@ -80,7 +80,7 @@ Adaptations des applications :
 
 - **Geonature** - selon besoin, éditer les fichiers de configuration apache : apache/sf.conf, apache/synthese.conf, apache/wms.conf ; et éditer les fichiers de configuration de l'application : web/js/config.js, web/js/configmap.js, lib/sfGeonatureConfig.php 
 
-- **TaxHub** - si TaxHub s'ouvre sur un page blanche, vérifier que le répertoire /static/node_modules est bien présent, s'il est absent se placer dans static/ ``cd /home/geonatureadmin/static/`` et lancer la commande ``sudo npm install`` ; si la commande n'a pas fonctionner (pas de création du répertoire /static/node_modules), lancer les commandes ``npm config set registry http://registry.npmjs.org/`` puis ``npm install``
+- **TaxHub** - si TaxHub s'ouvre sur un page blanche, vérifier que le répertoire /static/node_modules/ est bien présent, s'il est absent se placer dans /static/ ``cd /home/geonatureadmin/taxhub/static/`` et lancer la commande ``sudo npm install`` ; si la commande n'a pas fonctionné (pas de création du répertoire /static/node_modules/), lancer les commandes ``npm config set registry http://registry.npmjs.org/`` puis ``npm install``
 
 - **Geonature-atlas** - remplacer les données test (territoire, communes)
 
