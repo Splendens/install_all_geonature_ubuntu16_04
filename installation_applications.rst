@@ -6,7 +6,7 @@ Installation des applications
 Avant d'installer les applications, vérifier que le serveur répond à tous les prérequis : https://github.com/Splendens/install_all_geonature_ubuntu16_04/blob/master/installation_serveur.rst
 
 
-Instalation 
+Installation 
 ------------
 
 
