@@ -96,9 +96,9 @@ Suivre la prodédure d'installation commande par commande
 
 - Ajout des repository nécessaires 
 
-	``add-apt-repository ppa:ondrej/php``
+	``sudo add-apt-repository ppa:ondrej/php``
 
-	``apt update``
+	``sudo apt-get update``
 
 
 - Installation des packages
@@ -206,7 +206,7 @@ Suivre la prodédure d'installation commande par commande
 
 	``sudo a2enmod proxy_http``
 
-	``sudo services restart apache2``
+	``sudo services  apache2 restart``
 
 
 - Vérifier que le répertoire ``/tmp`` existe et que l’utilisateur ``www-data`` y a accès en lecture/écriture.
