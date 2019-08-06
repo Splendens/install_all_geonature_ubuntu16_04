@@ -173,7 +173,7 @@ Suivre la prodédure d'installation commande par commande
 
 	``sudo a2enmod php5.6``
 
-	``sudo services restart apache2``
+	``sudo services apache2 restart``
 
 
 
