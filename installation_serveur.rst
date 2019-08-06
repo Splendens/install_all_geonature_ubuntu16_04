@@ -206,7 +206,7 @@ Suivre la prodédure d'installation commande par commande
 
 	``sudo a2enmod proxy_http``
 
-	``sudo services  apache2 restart``
+	``sudo service  apache2 restart``
 
 
 - Vérifier que le répertoire ``/tmp`` existe et que l’utilisateur ``www-data`` y a accès en lecture/écriture.
